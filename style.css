@@ -88,8 +88,23 @@ body{
     width: 20vmin;
 }
 
-#removeBg1{
+#left-fist1{
     height: 10vmin;
     width: 10vmin;
-    
+    border-radius: 2vmin;
+    animation: movement;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+@keyframes movement{
+    0%{
+        transform: translateX(0vmin);
+    }
+    50%{
+        transform: translateX(1min) ;
+    }
+    100%{
+        transform: translateX(2vmin) ease-in-out;
+    }
 }
