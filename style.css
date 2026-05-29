@@ -65,32 +65,35 @@
 body{
     background-color: rgb(225, 18, 18);
     text-align: center;
+    overflow-x: hidden;  /*EXTRA*/
 }
 
 .container{
-    height: 70vmin;
-    width: 80vmin;
+    height: 70vh;   /*EXTRA-vh*/
+    width: 100%;     /*EXTRA %*/
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-#Game{
-    height: 60vmin;
-    width: 50vmin;
+.Game{
+    height: 60vh;   /*EXTRA -vh*/
+    width: 100%;    /*EXTRA %*/
+    max-width: 800px;   /*EXTRA for max-width for big screens*/
+    padding: 0 20px;    /*EXTRA 0 for top and bottom 20 for right and left*/
+    box-sizing: border-box;   /*EXTRA to include padding in total width*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-/* #btn1{
-    height: 20vmin;
-    width: 20vmin;
-} */
+
 
 #left-fist1{
     height: 20vmin;
     width: 20vmin;
+    max-height: 150px;
+    max-width: 150px;
     border-radius: 12vmin;
     animation: movement;
     animation-iteration-count: infinite;
@@ -110,3 +113,28 @@ body{
         transform: translateY(3vmin);
     }
 }
+
+#right-fist1{
+    height: 20vmin;
+    width: 20vmin;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 12vmin;
+    animation: movement-2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.7s;
+    transition: ease-in-out;
+    
+}
+@keyframes movement-2{
+    0%{
+        transform: translateY(0vmin);
+    }
+    /* 50%{
+        transform: translateX(1vmin);
+    } */
+    100%{
+        transform: translateY(3vmin);
+    }
+} 
