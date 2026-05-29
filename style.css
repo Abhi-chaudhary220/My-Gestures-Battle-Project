@@ -50,3 +50,46 @@
 /*animation-direction mtlb animation jis element pe h uski direction kya hogi mtlb element kis trf move krega*/
 
 /*s, ms stands for time in seconds and milliseconds for animations on elements*/
+
+
+
+/* < GAME STYLING > */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color: rgb(225, 18, 18);
+    text-align: center;
+}
+
+.container{
+    height: 70vmin;
+    width: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Game{
+    height: 60vmin;
+    width: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn1{
+    height: 20vmin;
+    width: 20vmin;
+}
+
+#removeBg1{
+    height: 10vmin;
+    width: 10vmin;
+    
+}
