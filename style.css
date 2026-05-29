@@ -83,28 +83,30 @@ body{
     justify-content: center;
     align-items: center;
 }
-#btn1{
+/* #btn1{
     height: 20vmin;
     width: 20vmin;
-}
+} */
 
 #left-fist1{
-    height: 10vmin;
-    width: 10vmin;
-    border-radius: 2vmin;
+    height: 20vmin;
+    width: 20vmin;
+    border-radius: 12vmin;
     animation: movement;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
+    transition: ease-in-out;
+    
 }
 @keyframes movement{
     0%{
-        transform: translateX(0vmin);
+        transform: translateY(0vmin);
     }
-    50%{
-        transform: translateX(1min) ;
-    }
+    /* 50%{
+        transform: translateX(1vmin);
+    } */
     100%{
-        transform: translateX(2vmin) ease-in-out;
+        transform: translateY(3vmin);
     }
 }
