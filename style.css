@@ -68,6 +68,11 @@ body{
     overflow-x: hidden;  /*EXTRA*/
 }
 
+h1{
+    color: rgb(175, 202, 225);
+}
+
+
 .container{
     height: 70vh;   /*EXTRA-vh*/
     width: 100%;     /*EXTRA %*/
