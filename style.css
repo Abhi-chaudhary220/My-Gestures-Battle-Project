@@ -143,3 +143,8 @@ h1{
         transform: translateY(3vmin);
     }
 } 
+
+.msg-container{
+    height: 12vh;
+    width: 100%;
+}
