@@ -161,7 +161,7 @@ h1{
     height: 8vmin;
     width: 8vmin;
     font-size: 5vmin;
-    border-radius: 12vmin;
+    border-radius: 50%;
     border: none;
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
@@ -185,7 +185,7 @@ h1{
     height: 8vmin;
     width: 8vmin;
     font-size: 5vmin;
-    border-radius: 12vmin;
+    border-radius: 50%;
     border: none;
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
@@ -209,7 +209,7 @@ h1{
     height: 8vmin;
     width: 8vmin;
     font-size: 5vmin;
-    border-radius: 12vmin;
+    border-radius: 50%;
     border: none;
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
