@@ -150,8 +150,33 @@ h1{
 }
 
 .symbols{
-    height: 10vh;
+    height: 5vh;
     width: 100%;
+    margin-top: 10vh;
     display: flex;
     justify-content: space-evenly;
+}
+
+#stone{
+    height: 8vmin;
+    width: 8vmin;
+    font-size: 5vmin;
+    border-radius: 12vmin;
+    border: none;
+    background-color: rgb(85, 125, 210);
+    animation: stone-movement;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+    
+}
+
+@keyframes stone-movement{
+    0%{
+        transform: translateX(0vmin);
+    }
+    100%{
+        transform: translateX(2vmin);
+    }
 }
