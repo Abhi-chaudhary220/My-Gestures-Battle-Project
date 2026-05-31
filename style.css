@@ -69,7 +69,7 @@ body{
 }
 
 h1{
-    color: rgb(175, 202, 225);
+    color: rgb(18, 216, 193);
 }
 
 
@@ -187,7 +187,7 @@ h1{
     font-size: 5vmin;
     border-radius: 50%;
     border: none;
-    background-color: rgb(85, 125, 210);
+    background-color: rgb(72, 21, 64);
     animation: stone-movement;
     animation-duration: 1s;
     animation-direction: alternate;
@@ -211,7 +211,7 @@ h1{
     font-size: 5vmin;
     border-radius: 50%;
     border: none;
-    background-color: rgb(85, 125, 210);
+    background-color: rgb(14, 221, 165);
     animation: stone-movement;
     animation-duration: 1s;
     animation-direction: alternate;
@@ -229,3 +229,10 @@ h1{
     }
 }
 
+.new-btn{
+    margin-top: 10vmin;
+    height: 4vh;
+    background-color: rgb(129, 58, 58);
+    color: beige;
+    border-radius: 20%;
+    }
