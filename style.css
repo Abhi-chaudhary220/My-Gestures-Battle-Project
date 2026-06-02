@@ -220,6 +220,8 @@ h1{
     
 }
 
+/*writing animations of scissor sign*/
+
 @keyframes stone-movement{
     0%{
         transform: translateX(0vmin);
