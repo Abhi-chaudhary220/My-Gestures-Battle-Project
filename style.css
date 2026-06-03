@@ -132,6 +132,9 @@ h1{
     transition: ease-in-out;
     
 }
+
+/*writing animations of right fist*/
+
 @keyframes movement-2{
     0%{
         transform: translateY(0vmin);
