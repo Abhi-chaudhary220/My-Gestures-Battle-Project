@@ -171,7 +171,7 @@ h1{
     height: 8vmin;
     width: 12vmin;
     font-size: 5vmin;
-    border: 2px solid rgb(46, 18, 49);
+    border: 3px solid rgb(200, 11, 221);
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
     animation-duration: 1s;
@@ -198,7 +198,7 @@ h1{
     height: 8vmin;
     width: 12vmin;
     font-size: 5vmin;
-    border: 2px solid rgb(122, 206, 122);
+    border: 3px solid rgb(122, 206, 122);
     background-color: rgb(72, 21, 64);
     animation: stone-movement;
     animation-duration: 1s;
@@ -225,7 +225,7 @@ h1{
     height: 8vmin;
     width: 12vmin;
     font-size: 5vmin;
-    border: 2px solid rgb(45, 79, 163);
+    border: 3px solid rgb(228, 137, 17);
     background-color: rgb(14, 221, 165);
     animation: stone-movement;
     animation-duration: 1s;
@@ -253,5 +253,6 @@ h1{
     height: 4vh;
     background-color: rgb(129, 58, 58);
     color: beige;
-    border-radius: 20%;
+    border-radius: 2%;
+    border: 3px solid rgb(222, 20, 128);
     }
