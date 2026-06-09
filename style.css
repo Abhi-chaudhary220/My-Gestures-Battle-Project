@@ -152,8 +152,10 @@ h1{
 /*Styling msg container*/
 
 .msg-container{
-    height: 12vh;
+    height: 8vh;
     width: 100%;
+    box-sizing: border-box;
+    margin-top: 3vh;
 }
 
 
