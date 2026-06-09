@@ -133,6 +133,9 @@ h1{
     transition: ease-in-out;
     
 }
+
+/*writing animations of right fist*/
+
 @keyframes movement-2{
     0%{
         transform: translateY(0vmin);
@@ -145,10 +148,14 @@ h1{
     }
 } 
 
+/*Styling msg container*/
+
 .msg-container{
     height: 12vh;
     width: 100%;
 }
+
+/*Styling symbols*/
 
 .symbols{
     height: 5vh;
@@ -157,6 +164,8 @@ h1{
     display: flex;
     justify-content: space-evenly;
 }
+
+/*Styling stone sign button*/
 
 #stone{
     height: 8vmin;
@@ -172,6 +181,8 @@ h1{
     
 }
 
+/*writing animations of stone sign*/
+
 @keyframes stone-movement{
     0%{
         transform: translateX(0vmin);
@@ -180,6 +191,8 @@ h1{
         transform: translateX(2vmin);
     }
 }
+
+/*Styling paper sign button*/
 
 #paper{
     height: 8vmin;
@@ -195,6 +208,8 @@ h1{
     
 }
 
+/*writing animations of paper sign*/
+
 @keyframes stone-movement{
     0%{
         transform: translateX(0vmin);
@@ -203,6 +218,8 @@ h1{
         transform: translateX(2vmin);
     }
 }
+
+/*Styling scissor sign button*/
 
 #scissor{
     height: 8vmin;
@@ -218,6 +235,8 @@ h1{
     
 }
 
+/*writing animations of scissor sign*/
+
 @keyframes stone-movement{
     0%{
         transform: translateX(0vmin);
@@ -226,6 +245,8 @@ h1{
         transform: translateX(2vmin);
     }
 }
+
+/*Styling new game button*/
 
 .new-btn{
     margin-top: 10vmin;
