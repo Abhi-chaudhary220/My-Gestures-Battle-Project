@@ -64,6 +64,7 @@
 
 body{
     background-color: rgb(225, 18, 18);
+    background: radial-gradient(circle at center,#671010, #0c4428);
     text-align: center;
     overflow-x: hidden;  /*EXTRA*/
 }
@@ -159,10 +160,9 @@ h1{
 
 #stone{
     height: 8vmin;
-    width: 8vmin;
+    width: 12vmin;
     font-size: 5vmin;
-    border-radius: 50%;
-    border: none;
+    border: 2px solid rgb(46, 18, 49);
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
     animation-duration: 1s;
@@ -183,10 +183,9 @@ h1{
 
 #paper{
     height: 8vmin;
-    width: 8vmin;
+    width: 12vmin;
     font-size: 5vmin;
-    border-radius: 50%;
-    border: none;
+    border: 2px solid rgb(122, 206, 122);
     background-color: rgb(72, 21, 64);
     animation: stone-movement;
     animation-duration: 1s;
@@ -207,10 +206,9 @@ h1{
 
 #scissor{
     height: 8vmin;
-    width: 8vmin;
+    width: 12vmin;
     font-size: 5vmin;
-    border-radius: 50%;
-    border: none;
+    border: 2px solid rgb(45, 79, 163);
     background-color: rgb(14, 221, 165);
     animation: stone-movement;
     animation-duration: 1s;
