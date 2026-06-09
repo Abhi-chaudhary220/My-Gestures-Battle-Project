@@ -64,13 +64,14 @@
 
 body{
     background-color: rgb(225, 18, 18);
-    background: radial-gradient(circle at center,#671010, #0c4428);
+    background: radial-gradient(circle at center,#6710108f, #49a1b4);  /*EXTRA*/
     text-align: center;
     overflow-x: hidden;  /*EXTRA*/
 }
 
 h1{
-    color: rgb(18, 216, 193);
+    color: rgb(51, 3, 3);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -155,6 +156,8 @@ h1{
     width: 100%;
 }
 
+
+
 /*Styling symbols*/
 
 .symbols{
@@ -179,6 +182,11 @@ h1{
     animation-iteration-count: infinite;
     transition: ease-in-out;
     
+}
+
+#stone:hover{
+    height: 10vmin;
+    width: 15vmin;
 }
 
 /*writing animations of stone sign*/
@@ -208,6 +216,11 @@ h1{
     
 }
 
+#paper:hover{
+    height: 10vmin;
+    width: 15vmin;
+}
+
 /*writing animations of paper sign*/
 
 @keyframes stone-movement{
@@ -232,7 +245,11 @@ h1{
     animation-direction: alternate;
     animation-iteration-count: infinite;
     transition: ease-in-out;
-    
+}
+
+#scissor:hover{
+    height: 10vmin;
+    width: 15vmin;
 }
 
 /*writing animations of scissor sign*/
@@ -244,6 +261,7 @@ h1{
     100%{
         transform: translateX(2vmin);
     }
+    
 }
 
 /*Styling new game button*/
@@ -251,8 +269,14 @@ h1{
 .new-btn{
     margin-top: 10vmin;
     height: 4vh;
+    width: 10vw;
     background-color: rgb(129, 58, 58);
     color: beige;
     border-radius: 2%;
-    border: 3px solid rgb(222, 20, 128);
+    border: 3px solid rgb(248, 11, 11);
+    }
+
+    .new-btn:hover{
+        height: 5vh;
+        width: 11vw;
     }
