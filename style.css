@@ -226,6 +226,7 @@ h1{
     width: 12vmin;
     font-size: 5vmin;
     border: 3px solid rgb(122, 206, 122);
+    border-radius: 8px;
     background-color: rgb(72, 21, 64);
     animation: paper-movement;
     animation-duration: 1s;
