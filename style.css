@@ -259,6 +259,7 @@ h1{
     width: 12vmin;
     font-size: 5vmin;
     border: 3px solid rgb(228, 137, 17);
+    border-radius: 8px;
     background-color: rgb(14, 221, 165);
     animation: scissor-movement;
     animation-duration: 1s;
