@@ -193,7 +193,7 @@ h1{
     width: 12vmin;
     font-size: 5vmin;
     border: 3px solid rgb(200, 11, 221);
-    
+    border-radius: 8px;
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
     animation-duration: 1s;
