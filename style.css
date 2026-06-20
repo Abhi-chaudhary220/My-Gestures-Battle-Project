@@ -159,20 +159,19 @@ h1{
 
 
 .scoreboard-container{
-    height: 4vh;
+    height: 5vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
     
 }
 
 .score-boxes{
     height: 3vh;
-    width:90vw;
-    display: space-between;
-    justify-content: center;
+    width: 100%;
     
-}
+    }
 
 
 
@@ -194,6 +193,7 @@ h1{
     width: 12vmin;
     font-size: 5vmin;
     border: 3px solid rgb(200, 11, 221);
+    
     background-color: rgb(85, 125, 210);
     animation: stone-movement;
     animation-duration: 1s;
@@ -227,7 +227,7 @@ h1{
     font-size: 5vmin;
     border: 3px solid rgb(122, 206, 122);
     background-color: rgb(72, 21, 64);
-    animation: stone-movement;
+    animation: paper-movement;
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -242,7 +242,7 @@ h1{
 
 /*writing animations of paper sign*/
 
-@keyframes stone-movement{
+@keyframes paper-movement{
     0%{
         transform: translateX(0vmin);
     }
@@ -259,7 +259,7 @@ h1{
     font-size: 5vmin;
     border: 3px solid rgb(228, 137, 17);
     background-color: rgb(14, 221, 165);
-    animation: stone-movement;
+    animation: scissor-movement;
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -273,7 +273,7 @@ h1{
 
 /*writing animations of scissor sign*/
 
-@keyframes stone-movement{
+@keyframes scissor-movement{
     0%{
         transform: translateX(0vmin);
     }
