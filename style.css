@@ -152,11 +152,35 @@ h1{
 /*Styling msg container*/
 
 .msg-container{
-    height: 8vh;
+    height: 12vh;
     width: 100%;
-    box-sizing: border-box;
-    margin-top: 3vh;
 }
+
+/*Styling new game button*/
+
+#new-btn{
+    margin-top: 4.8vmin;
+    height: 4vh;
+    width: 10vw;
+    background-color: rgb(129, 58, 58);
+    color: beige;
+    border-radius: 2%;
+    border: 3px solid rgb(248, 11, 11);
+    }
+
+#new-btn:hover{
+        height: 5vh;
+        width: 11vw;
+    }
+
+.scoreboard-container{
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
 
 
 
@@ -266,19 +290,3 @@ h1{
     
 }
 
-/*Styling new game button*/
-
-.new-btn{
-    margin-top: 10vmin;
-    height: 4vh;
-    width: 10vw;
-    background-color: rgb(129, 58, 58);
-    color: beige;
-    border-radius: 2%;
-    border: 3px solid rgb(248, 11, 11);
-    }
-
-    .new-btn:hover{
-        height: 5vh;
-        width: 11vw;
-    }
