@@ -159,19 +159,22 @@ h1{
 
 
 .scoreboard-container{
-    height: 5vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-    
+    box-sizing: border-box;
+    padding: 0 120px;
+    margin-top: 2vh;
 }
 
 .score-boxes{
-    height: 3vh;
     width: 100%;
-    
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+}
 
 
 
