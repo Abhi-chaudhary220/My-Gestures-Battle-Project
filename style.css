@@ -170,6 +170,7 @@ h1{
     height: 3vh;
     width:90vw;
     display: space-between;
+    justify-content: center;
     
 }
 
