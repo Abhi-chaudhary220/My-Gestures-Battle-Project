@@ -24,6 +24,20 @@ if(playerTurn){
                 leftFist.alt= "stone";
             })
         }
+    
+    else if(item === "paper"){
+        paperBtn.addEventListener("click", ()=>{
+            leftFist.src= "paper.png";
+            leftFist.alt= "paper";
+        })
     }
     
-}
+    else (item === "scissor"){
+        scissorBtn.addEventListener("click", ()=>{
+            leftFist.src= "scissor.png";
+            leftFist.alt= "scissor";
+        })
+    }}
+    
+    
+)};
