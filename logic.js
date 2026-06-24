@@ -13,7 +13,7 @@ let scissorBtn = document.querySelector("#scissor");
 let newGameBtn = document.querySelector("#new-btn");
 
 function leftFistMove(){
-    leftFist.addEventListener("click", ()=>{
+    stoneBtn.addEventListener("click", ()=>{
     leftFist.src= "rock.png";
     leftFist.alt= "rock";
     });
