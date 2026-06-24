@@ -2,3 +2,7 @@ let messageContainer = document.querySelector(".msg-container");
 let message = document.querySelector("#msg");
 let gameContainer = document.querySelector(".Game-container");
 let game = document.querySelector(".Game");
+let leftFist = document.querySelector("#left-fist1");
+let rightFist = document.querySelector("#right-fist1");
+let playerScore = document.querySelector("#player-score");
+let computerScore = document.querySelector("#computer-score")
