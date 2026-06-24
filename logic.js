@@ -15,29 +15,26 @@ let newGameBtn = document.querySelector("#new-btn");
 
 let playerTurn = true;
 
-if(playerTurn){
-    array= ["stone", "paper", "scissor"];
-    array.forEach(function(item){
-        if(item === "stone"){
-            stoneBtn.addEventListener("click", ()=>{
-                leftFist.src= "stone.png";
-                leftFist.alt= "stone";
-            })
-        }
-    
-    else if(item === "paper"){
-        paperBtn.addEventListener("click", ()=>{
-            leftFist.src= "paper.png";
-            leftFist.alt= "paper";
-        })
+stoneBtn.addEventListener("click", ()=>{
+    if(playerTurn){
+        leftFist.src = "stone.png";
+        leftFist.alt = "stone";
+        playerTurn = false;
     }
-    
-    else (item === "scissor"){
-        scissorBtn.addEventListener("click", ()=>{
-            leftFist.src= "scissor.png";
-            leftFist.alt= "scissor";
-        })
-    }}
-    
-    
-)};
+    });
+
+paperBtn.addEventListener("click", ()=>{
+    if(playerTurn){
+        leftFist.src = "paper.png";
+        leftFist.alt = "paper";
+        playerTurn = false;
+    }
+});
+
+scissorBtn.addEventListener("click", ()=>{
+    if(playerTurn){
+        leftFist.src = "scissor.jpg";
+        leftFist.alt = "scissor";
+        playerTurn = false;
+    }
+});
