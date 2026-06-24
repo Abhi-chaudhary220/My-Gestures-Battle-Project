@@ -12,10 +12,18 @@ let paperBtn = document.querySelector("#paper");
 let scissorBtn = document.querySelector("#scissor");
 let newGameBtn = document.querySelector("#new-btn");
 
-function leftFistMove(){
-    stoneBtn.addEventListener("click", ()=>{
-    leftFist.src= "rock.png";
-    leftFist.alt= "rock";
-    });
+
+let playerTurn = true;
+
+if(playerTurn){
+    array= ["stone", "paper", "scissor"];
+    array.forEach(function(item){
+        if(item === "stone"){
+            stoneBtn.addEventListener("click", ()=>{
+                leftFist.src= "stone.png";
+                leftFist.alt= "stone";
+            })
+        }
+    }
+    
 }
-leftFistMove();
