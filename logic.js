@@ -14,6 +14,8 @@ let newGameBtn = document.querySelector("#new-btn");
 
 function leftFistMove(){
     leftFist.addEventListener("click", ()=>{
-        https://i.pinimg.com/474x/67/eb/fd/67ebfd32e898b4ec3ae4e59ae33832c8.jpg
-    })};
+    leftFist.src= "rock.png";
+    leftFist.alt= "rock";
+    });
+}
 leftFistMove();
