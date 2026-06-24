@@ -5,4 +5,5 @@ let game = document.querySelector(".Game");
 let leftFist = document.querySelector("#left-fist1");
 let rightFist = document.querySelector("#right-fist1");
 let playerScore = document.querySelector("#player-score");
-let computerScore = document.querySelector("#computer-score")
+let computerScore = document.querySelector("#computer-score");
+let symbolsContainer = document.querySelector(".symbols");
