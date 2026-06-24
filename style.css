@@ -75,7 +75,7 @@ h1{
 }
 
 
-.container{
+.Game-container{
     height: 50vh;   /*EXTRA-vh*/
     width: 100%;     /*EXTRA %*/
     display: flex;
