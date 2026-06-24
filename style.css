@@ -132,7 +132,11 @@ h1{
     animation-direction: alternate;
     animation-duration: 0.7s;
     transition: ease-in-out;
-    
+}
+
+.flip-container{
+    display: inline-block;
+    transform: scaleX(-1);
 }
 
 /*writing animations of right fist*/

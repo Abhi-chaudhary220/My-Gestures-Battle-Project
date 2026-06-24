@@ -15,11 +15,13 @@ let newGameBtn = document.querySelector("#new-btn");
 
 let playerTurn = true;
 
+
 stoneBtn.addEventListener("click", ()=>{
     if(playerTurn){
         leftFist.src = "stone.png";
         leftFist.alt = "stone";
         playerTurn = false;
+        computerMove();
     }
     });
 
@@ -28,13 +30,27 @@ paperBtn.addEventListener("click", ()=>{
         leftFist.src = "paper.png";
         leftFist.alt = "paper";
         playerTurn = false;
+        computerMove();
     }
 });
 
 scissorBtn.addEventListener("click", ()=>{
     if(playerTurn){
-        leftFist.src = "scissor.jpg";
+        leftFist.src = "scissor.png";
         leftFist.alt = "scissor";
         playerTurn = false;
+        computerMove();
     }
 });
+
+
+function computerMove(){
+    setTimeout(()=>{
+    let array = ["stone", "paper", "scissor"];
+    let randomChoice = array[Math.floor(Math.random() * array.length)];
+    rightFist.src = randomChoice + ".png";
+    rightFist.alt = randomChoice;
+    playerTurn = true;
+},1000);
+};
+
