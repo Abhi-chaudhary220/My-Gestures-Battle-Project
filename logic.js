@@ -87,4 +87,14 @@ function checkWinner(playerChoice, computerChoice){
     },1000);
 };
 
-
+function newGame(){
+    newGameBtn.addEventListener("click", ()=>{
+        messageContainer.setAttribute("hidden", true);
+        playerTurn = true;
+        leftFist.src = "Left Fist image.png";
+        leftFist.alt = "left-fist";
+        rightFist.src = "Right Fist image.png";
+        rightFist.alt = "right-fist";
+    })
+};
+newGame();
