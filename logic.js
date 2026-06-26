@@ -22,6 +22,7 @@ stoneBtn.addEventListener("click", ()=>{
         leftFist.alt = "stone";
         playerTurn = false;
         computerMove();
+        checkWinner();
     }
     });
 
@@ -31,6 +32,7 @@ paperBtn.addEventListener("click", ()=>{
         leftFist.alt = "paper";
         playerTurn = false;
         computerMove();
+        checkWinner();
     }
 });
 
@@ -40,6 +42,7 @@ scissorBtn.addEventListener("click", ()=>{
         leftFist.alt = "scissor";
         playerTurn = false;
         computerMove();
+        checkWinner();
     }
 });
 
@@ -54,3 +57,31 @@ function computerMove(){
 },1000);
 };
 
+function checkWinner(playerChoice, computerChoice){
+    setTimeout(()=>{
+        messageContainer.removeAttribute("hidden");
+    if (playerChoice === computerChoice){
+        message.innerText = "Tie Play Again";
+    }
+    else if(leftFist === "stone" && rightFist === "paper"){
+        message.innerText = "Computer Win";
+    }
+    else if(leftFist === "paper" && rightFist === "scissor"){
+        message.innerText = "Computer Win";
+    }
+    else if(leftFist === "scissor" && rightFist === "stone"){
+        message.innerText = "Computer Win";
+    }
+    else if(leftFist === "stone" && rightFist === "scissor"){
+        message.innerText = "You Win";
+    }
+    else if(leftFist === "paper" && rightFist === "stone"){
+        message.innerText = "You Win";
+    }   
+    else if(leftFist === "scissor" && rightFist === "paper"){
+        message.innerText = "You Win";
+    }
+    
+    
+    },2000);
+};

@@ -70,7 +70,7 @@ body{
 }
 
 h1{
-    color: rgb(53, 11, 11);
+    color: rgb(234, 195, 195);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -178,11 +178,11 @@ h1{
 }
 
 #player-score{
-    color: rgb(238, 236, 247);
+    color: rgb(251, 250, 255);
 }
 
 #computer-score{
-    color: rgb(238, 236, 247);
+    color: rgb(251, 250, 255);
 }
 
 
