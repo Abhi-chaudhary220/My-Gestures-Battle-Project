@@ -21,8 +21,8 @@ stoneBtn.addEventListener("click", ()=>{
         leftFist.src = "stone.png";
         leftFist.alt = "stone";
         playerTurn = false;
-        computerMove();
-        checkWinner();
+        computerMove("stone");
+        
     }
     });
 
@@ -31,8 +31,8 @@ paperBtn.addEventListener("click", ()=>{
         leftFist.src = "paper.png";
         leftFist.alt = "paper";
         playerTurn = false;
-        computerMove();
-        checkWinner();
+        computerMove("paper");
+        
     }
 });
 
@@ -41,18 +41,19 @@ scissorBtn.addEventListener("click", ()=>{
         leftFist.src = "scissor.png";
         leftFist.alt = "scissor";
         playerTurn = false;
-        computerMove();
-        checkWinner();
+        computerMove("scissor");
+        
     }
 });
 
 
-function computerMove(){
+function computerMove(playerChoice){
     setTimeout(()=>{
     let array = ["stone", "paper", "scissor"];
     let randomChoice = array[Math.floor(Math.random() * array.length)];
     rightFist.src = randomChoice + ".png";
     rightFist.alt = randomChoice;
+    checkWinner(playerChoice, randomChoice);
     playerTurn = true;
 },1000);
 };
@@ -63,25 +64,27 @@ function checkWinner(playerChoice, computerChoice){
     if (playerChoice === computerChoice){
         message.innerText = "Tie Play Again";
     }
-    else if(leftFist === "stone" && rightFist === "paper"){
+    else if(playerChoice === "stone" && computerChoice === "paper"){
         message.innerText = "Computer Win";
     }
-    else if(leftFist === "paper" && rightFist === "scissor"){
+    else if(playerChoice === "paper" && computerChoice === "scissor"){
         message.innerText = "Computer Win";
     }
-    else if(leftFist === "scissor" && rightFist === "stone"){
+    else if(playerChoice === "scissor" && computerChoice === "stone"){
         message.innerText = "Computer Win";
     }
-    else if(leftFist === "stone" && rightFist === "scissor"){
+    else if(playerChoice === "stone" && computerChoice === "scissor"){
         message.innerText = "You Win";
     }
-    else if(leftFist === "paper" && rightFist === "stone"){
+    else if(playerChoice === "paper" && computerChoice === "stone"){
         message.innerText = "You Win";
     }   
-    else if(leftFist === "scissor" && rightFist === "paper"){
+    else if(playerChoice === "scissor" && computerChoice === "paper"){
         message.innerText = "You Win";
     }
     
     
-    },2000);
+    },1000);
 };
+
+
