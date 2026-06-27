@@ -62,25 +62,25 @@ function checkWinner(playerChoice, computerChoice){
     setTimeout(()=>{
         messageContainer.removeAttribute("hidden");
     if (playerChoice === computerChoice){
-        message.innerText = "Tie Play Again";
+        message.innerText = "😟Tie Play Again😟";
     }
     else if(playerChoice === "stone" && computerChoice === "paper"){
-        message.innerText = "Computer Win";
+        message.innerText = "You Lose😥 Computer Wins😄";
     }
     else if(playerChoice === "paper" && computerChoice === "scissor"){
-        message.innerText = "Computer Win";
+        message.innerText = "You Lose😥 Computer Wins😄";
     }
     else if(playerChoice === "scissor" && computerChoice === "stone"){
-        message.innerText = "Computer Win";
+        message.innerText = "You Lose😥 Computer Wins😄";
     }
     else if(playerChoice === "stone" && computerChoice === "scissor"){
-        message.innerText = "You Win";
+        message.innerText = "Congratulations😄 You Win🎉";
     }
     else if(playerChoice === "paper" && computerChoice === "stone"){
-        message.innerText = "You Win";
+        message.innerText = "Congratulations😄 You Win🎉";
     }   
     else if(playerChoice === "scissor" && computerChoice === "paper"){
-        message.innerText = "You Win";
+        message.innerText = "Congratulations😄 You Win🎉";
     }
     
     
@@ -98,3 +98,8 @@ function newGame(){
     })
 };
 newGame();
+
+
+
+
+

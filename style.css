@@ -157,6 +157,13 @@ h1{
     width: 100%;
 }
 
+#msg{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#f2fa05;
+}
+
 
 
 .scoreboard-container{
