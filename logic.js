@@ -4,8 +4,8 @@ let gameContainer = document.querySelector(".Game-container");
 let game = document.querySelector(".Game");
 let leftFist = document.querySelector("#left-fist1");
 let rightFist = document.querySelector("#right-fist1");
-let playerScore = document.querySelector("#player-score");
-let computerScore = document.querySelector("#computer-score");
+// let playerScore = document.querySelector("#player-score");
+// let computerScore = document.querySelector("#computer-score"); I will add this feature later
 let symbolsContainer = document.querySelector(".symbols");
 let stoneBtn = document.querySelector("#stone");
 let paperBtn = document.querySelector("#paper");
@@ -14,6 +14,8 @@ let newGameBtn = document.querySelector("#new-btn");
 
 
 let playerTurn = true;
+plSc = 0;
+coSc = 0;
 
 
 stoneBtn.addEventListener("click", ()=>{
@@ -72,6 +74,8 @@ function checkWinner(playerChoice, computerChoice){
     }
     else if(playerChoice === "scissor" && computerChoice === "stone"){
         message.innerText = "You Lose😥 Computer Wins😄";
+        coSc++;
+        computerScore.innerText = coSc;
     }
     else if(playerChoice === "stone" && computerChoice === "scissor"){
         message.innerText = "Congratulations😄 You Win🎉";
@@ -81,6 +85,8 @@ function checkWinner(playerChoice, computerChoice){
     }   
     else if(playerChoice === "scissor" && computerChoice === "paper"){
         message.innerText = "Congratulations😄 You Win🎉";
+        plSc++;
+        playerScore.innerText = plSc;
     }
     
     
