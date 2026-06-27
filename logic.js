@@ -14,8 +14,8 @@ let newGameBtn = document.querySelector("#new-btn");
 
 
 let playerTurn = true;
-plSc = 0;
-coSc = 0;
+// plSc = 0;
+// coSc = 0; Will make this later
 
 
 stoneBtn.addEventListener("click", ()=>{
@@ -67,26 +67,26 @@ function checkWinner(playerChoice, computerChoice){
         message.innerText = "😟Tie Play Again😟";
     }
     else if(playerChoice === "stone" && computerChoice === "paper"){
-        message.innerText = "You Lose😥 Computer Wins😄";
+        message.innerText = "Computer Wins😄";
     }
     else if(playerChoice === "paper" && computerChoice === "scissor"){
-        message.innerText = "You Lose😥 Computer Wins😄";
+        message.innerText = "Computer Wins😄";
     }
     else if(playerChoice === "scissor" && computerChoice === "stone"){
-        message.innerText = "You Lose😥 Computer Wins😄";
+        message.innerText = "Computer Wins😄";
         coSc++;
         computerScore.innerText = coSc;
     }
     else if(playerChoice === "stone" && computerChoice === "scissor"){
-        message.innerText = "Congratulations😄 You Win🎉";
+        message.innerText = "You Win🎉";
     }
     else if(playerChoice === "paper" && computerChoice === "stone"){
-        message.innerText = "Congratulations😄 You Win🎉";
+        message.innerText = "You Win🎉";
     }   
     else if(playerChoice === "scissor" && computerChoice === "paper"){
-        message.innerText = "Congratulations😄 You Win🎉";
-        plSc++;
-        playerScore.innerText = plSc;
+        message.innerText = "You Win🎉";
+        // plSc++;
+        // playerScore.innerText = plSc; Will make this later
     }
     
     
