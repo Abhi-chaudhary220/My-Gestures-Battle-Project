@@ -307,14 +307,14 @@ h1{
 /*Styling new game button*/
 
 #new-btn{
-    margin-top: 9vh;
+    margin-top: 10vh;
     height: 4vh;
     width: 10vw;
     min-width: 40px;
     background-color: rgb(129, 58, 58);
     color: beige;
     border-radius: 2%;
-    border: 3px solid rgb(13, 168, 199);
+    border: 1.5px solid rgb(53, 210, 241);
     }
 
 #new-btn:hover{
