@@ -107,7 +107,7 @@ newGame();
 
 
 
-//A custom built Gesture Battle game with custom UI//
+//A Custom built Gesture Battle Game with Custom UI//
 
 //Finally Game is Ready//
 
