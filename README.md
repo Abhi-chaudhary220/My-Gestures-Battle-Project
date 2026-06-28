@@ -15,4 +15,4 @@ A classic Gestures Battle game built with HTML, CSS, and JavaScript. Challenge t
 - JavaScript 
 
 ---
-Developed by **Abhishek Chaudhary**
+Developed by **Abhishek Kumar Chaudhary**
